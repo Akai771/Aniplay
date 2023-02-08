@@ -78,6 +78,7 @@
     <Content Include="Image\trial2.jpg" />
     <Content Include="Image\trial.png" />
     <Content Include="website.css" />
+    <Content Include="aniplay.css" />
     <Content Include="9_watchlist.aspx" />
     <Content Include="6_account.aspx" />
     <Content Include="Web.config" />

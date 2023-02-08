@@ -1,7 +1,7 @@
-﻿body {
+﻿body{
     background-color: #0F0C0C
 }
-
+   
 * {
     margin: 0;
     padding: 0;
@@ -26,21 +26,21 @@ p::selection {
     align-items: center;
 }
 
-    .nav-list li {
-        list-style: none;
-        padding: 26px 30px;
+.nav-list li {
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+    .nav-list li a:hover {
+        transition: 80ms;
+        width: 120px;
+        color: #42ff55;
     }
-
-        .nav-list li a {
-            text-decoration: none;
-            color: rgb(255, 255, 255);
-        }
-
-            .nav-list li a:hover {
-                transition: 80ms;
-                width: 120px;
-                color: #42ff55;
-            }
 
 .box-main {
     display: flex;
@@ -48,7 +48,8 @@ p::selection {
     align-items: center;
     color: black;
     max-width: 100%;
-    margin: auto;
+    margin-left: 30px;
+    margin-right: 30px;
     height: 40%;
 }
 
@@ -78,7 +79,7 @@ p::selection {
 .firstsection {
     background-color: rgb(129, 25, 255);
     background-repeat: no-repeat;
-    height: 660px;
+    height:660px;
 }
 
 .section {
@@ -92,18 +93,16 @@ p::selection {
     background-color: lightblue;
 }
 
-.text-field {
+.text-field{
     padding-left: 2em;
 }
 
 .text-field2 {
     padding-left: 4em;
 }
-
 .hyper-link {
     color: #9b9b9b
 }
-
     .hyper-link:hover {
         color: #11fa29
     }
@@ -282,29 +281,29 @@ p::selection {
         transition: all 0.2s ease-out;
     }
 
-.button:hover::before {
-    -webkit-animation: sh02 0.5s 0s linear;
-    -moz-animation: sh02 0.5s 0s linear;
-    animation: sh02 0.5s 0s linear;
-}
+        .button2:hover::before {
+            -webkit-animation: sh02 0.5s 0s linear;
+            -moz-animation: sh02 0.5s 0s linear;
+            animation: sh02 0.5s 0s linear;
+        }
 
-.button2::before {
-    content: '';
-    display: block;
-    width: 0px;
-    height: 86%;
-    position: absolute;
-    top: 7%;
-    left: 0%;
-    opacity: 0;
-    background: #fff;
-    box-shadow: 0 0 50px 30px #fff;
-    -webkit-transform: skewX(-20deg);
-    -moz-transform: skewX(-20deg);
-    -ms-transform: skewX(-20deg);
-    -o-transform: skewX(-20deg);
-    transform: skewX(-20deg);
-}
+    .button2::before {
+        content: '';
+        display: block;
+        width: 0px;
+        height: 86%;
+        position: absolute;
+        top: 7%;
+        left: 0%;
+        opacity: 0;
+        background: #fff;
+        box-shadow: 0 0 50px 30px #fff;
+        -webkit-transform: skewX(-20deg);
+        -moz-transform: skewX(-20deg);
+        -ms-transform: skewX(-20deg);
+        -o-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+    }
 
 @keyframes sh02 {
     from {
@@ -339,7 +338,7 @@ p::selection {
     font-weight: 600;
     letter-spacing: 2px;
     background: transparent;
-    color: #303030;
+    color: #0f0c0c;
     overflow: hidden;
     box-shadow: 0 0 0 0 transparent;
     -webkit-transition: all 0.2s ease-in;
@@ -349,19 +348,91 @@ p::selection {
 
     .button3:hover {
         background: #61ff71;
+        color: #F5F5FA;
         box-shadow: 0 0 30px 5px #a8ffb1;
         -webkit-transition: all 0.2s ease-out;
         -moz-transition: all 0.2s ease-out;
         transition: all 0.2s ease-out;
     }
 
-.button:hover::before {
+        .button3:hover::before {
+            -webkit-animation: sh02 0.5s 0s linear;
+            -moz-animation: sh02 0.5s 0s linear;
+            animation: sh02 0.5s 0s linear;
+        }
+
+    .button3::before {
+        content: '';
+        display: block;
+        width: 0px;
+        height: 86%;
+        position: absolute;
+        top: 7%;
+        left: 0%;
+        opacity: 0;
+        background: #fff;
+        box-shadow: 0 0 50px 30px #fff;
+        -webkit-transform: skewX(-20deg);
+        -moz-transform: skewX(-20deg);
+        -ms-transform: skewX(-20deg);
+        -o-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+    }
+
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+.button3:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+}
+
+.title_button {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid #8119ff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #0f0c0c;
+    overflow: hidden;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+    .title_button:hover {
+        color: #61ff71;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+    }
+
+.title_button:hover::before {
     -webkit-animation: sh02 0.5s 0s linear;
     -moz-animation: sh02 0.5s 0s linear;
     animation: sh02 0.5s 0s linear;
 }
 
-.button3::before {
+.title_button::before {
     content: '';
     display: block;
     width: 0px;
@@ -395,11 +466,11 @@ p::selection {
     }
 }
 
-.button3:active {
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: box-shadow 0.2s ease-in;
-    -moz-transition: box-shadow 0.2s ease-in;
-    transition: box-shadow 0.2s ease-in;
+.title_button:active {
+box-shadow: 0 0 0 0 transparent;
+-webkit-transition: box-shadow 0.2s ease-in;
+-moz-transition: box-shadow 0.2s ease-in;
+transition: box-shadow 0.2s ease-in;
 }
 
 .card {
@@ -420,4 +491,10 @@ p::selection {
     height: 455px;
     border-radius: 30px;
     background: #F5F5Fa;
+    
+}
+
+.align-ev {
+    justify-content: center;
+    align-items: center;
 }

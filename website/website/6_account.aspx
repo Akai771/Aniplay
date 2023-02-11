@@ -34,10 +34,6 @@
             <p>
                 <asp:Label class="text-big" style="color:white" ID ="label1" runat="server" Text="Account" />
             </p>
-            <div>
-                <asp:Label class="text-mid" Style="color: white" ID="label2" runat="server" Text="Username" />
-                <asp:Label class="text-mid" Style="color: white" ID="label3" runat="server" Text="Password" />
-                </div>
             <p style="padding-top:2em">
                 <asp:Button ID="button1" runat="server" Class="button2" Text="Log out" PostBackUrl="~/1_AniPlay.aspx" />
             </p>

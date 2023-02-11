@@ -27,13 +27,18 @@
                     <li class="text-mid"><a href="/6_account.aspx">Account</a></li>
                 </ul>
             </nav>
-        </div>
+        </div>   
         <div class="align-txt">
             <p>
                 <asp:Label class="text-big" style="color:white" ID ="label1" runat="server" Text="Home" />
             </p>      
         </div>
-
+        <div class="anime-marg">
+            <div class="card-ani">
+                <div>
+                </div>
+            </div>
+        </div>
         </section>
     </form>
     <footer class="background">

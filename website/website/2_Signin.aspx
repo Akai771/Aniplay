@@ -1,4 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="2_Signin.aspx.cs" Inherits="website.WebForm2" %>
+﻿<asp:SqlDataSource runat="server"></asp:SqlDataSource>
+
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="2_Signin.aspx.cs" Inherits="website.WebForm2" %>
 
 <!DOCTYPE html>
 
@@ -21,11 +23,16 @@
     </div>
     <form id="form1" runat="server">
         <section class="joinclass firstsection">
-            
+            <div>
+                <nav class="navbar background">
+                    <ul class="nav-list ">
+                        <li class="text-mid"><a href="/8_home.aspx">Aniplay</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="box-main" style="padding-top:10em"> 
-                <div class="card" style="align-content:center">
-                   <asp:Button Class="title_button text-big" ID="Button2" runat="server" OnClick="Button1_Click" Text="Aniplay" /> 
-                    <div class="align-ev">
+                <div class="card" style="align-content:center"> 
+                    <div class="">
                         <asp:Label style="color:#0f0c0c" Class=" text-big" ID="Label1" runat="server" Text="Sign in"></asp:Label>
                         <div class="text-field">
                             <div class="form__group field text-big">

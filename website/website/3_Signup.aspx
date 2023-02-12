@@ -24,7 +24,7 @@
             <div>
                 <asp:Menu CssClass=" text-mid nav-list" ID="Menu1" runat="server" Orientation="Horizontal" >
                     <Items>
-                        <asp:MenuItem Text="Aniplay" NavigateUrl="~/8_home.aspx" />
+                        <asp:MenuItem Text="Aniplay" NavigateUrl="~/1_AniPlay.aspx" />
                     </Items>
                 </asp:Menu>
             </div>
@@ -69,7 +69,7 @@
                             &nbsp;
                         </p>
                         <p>
-                            <asp:Button Class="but_ani" ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" />
+                            <asp:Button Class="button3" ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" />
                         </p>
                         <p>
                             &nbsp;</p>

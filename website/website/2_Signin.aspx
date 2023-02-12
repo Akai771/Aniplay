@@ -24,7 +24,7 @@
             <div>
                 <asp:Menu CssClass=" text-mid nav-list" ID="Menu1" runat="server" Orientation="Horizontal" >
                     <Items>
-                        <asp:MenuItem Text="Aniplay" NavigateUrl="~/8_home.aspx" />
+                        <asp:MenuItem Text="Aniplay" NavigateUrl="~/1_AniPlay.aspx" />
                     </Items>
                 </asp:Menu>
             </div>

@@ -31,7 +31,6 @@ namespace website
             {
                 var tes = y["username"].ToString();
                 read = tes;
-
             }
             y.Close();
             con.Close();

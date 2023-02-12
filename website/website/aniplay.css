@@ -135,7 +135,7 @@ p::selection {
     font-family: 'Roboto Condensed', serif;
     font-weight: 700;
     font-size: 17px;
-    width: 100%;
+    width: 19em;
     border: none;
     border-bottom: 2px solid #9b9b9b;
     outline: 0;
@@ -354,10 +354,10 @@ p::selection {
 }
 
     .button3:hover {
-        background: #61ff71;
+        background: #8119ff;
         color: #F5F5FA;
-        border: 1px solid #61ff71;
-        box-shadow: 0 0 30px 5px #a8ffb1;
+        border: 1px solid #8119ff;
+        box-shadow: 0 0 30px 5px #8119ff;
         -webkit-transition: all 0.2s ease-out;
         -moz-transition: all 0.2s ease-out;
         transition: all 0.2s ease-out;
@@ -485,7 +485,7 @@ transition: box-shadow 0.2s ease-in;
     padding-top: 2em;
     align-items: center;
     text-align: center;
-    width: 300px;
+    width: 400px;
     height: 320px;
     border-radius: 30px;
     background: #F5F5FA;
@@ -495,7 +495,7 @@ transition: box-shadow 0.2s ease-in;
     padding-top: 2em;
     align-items: center;
     text-align: center;
-    width: 240px;
+    width: 400px;
     height: 455px;
     border-radius: 30px;
     background: #F5F5Fa;
@@ -554,4 +554,57 @@ transition: box-shadow 0.2s ease-in;
         justify-items:center;
         margin-left: 10em;
         margin-right: 10em;
+    }
+
+
+.but_ani {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #66ff66;
+    color: ghostwhite;
+}
+
+    .but_ani span {
+        position: relative;
+        z-index: 10;
+        transition: color 0.4s;
+    }
+
+    .but_ani:hover span {
+        color: black;
+    }
+
+    .but_ani::before,
+    .but_ani::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .but_ani::before {
+        content: "";
+        background: #000;
+        width: 120%;
+        left: -10%;
+        transform: skew(30deg);
+        transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    }
+
+    .but_ani:hover::before {
+        transform: translate3d(100%, 0, 0);
     }

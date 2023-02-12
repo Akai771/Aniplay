@@ -20,32 +20,29 @@
     <form id="form1" runat="server">
         <section class="joinclass firstsection">
             <div class="box-main" style="padding-top:10em">
-                <div class="card2" style="align-content:center">
+                <div class="login-box">
+                    <p>Login</p>
+                    <form>
+                        <div class="user-box">
+                            <input required="" name="" type="text">
+                            <label>Email</label>
+                        </div>
+                        <div class="user-box">
+                            <input required="" name="" type="password">
+                            <label>Password</label>
+                        </div>
+                        <a href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Submit
+                        </a>
+                    </form>
+                    <p>Don't have an account? <a href="" class="a2">Sign up!</a></p>
+                </div>
 
-                <asp:Label style="color:white" Class="text-big" ID="Label1" runat="server" Text="Sign up"></asp:Label>
-                    <div class="text-field2">
-                        <div class="form__group field text-big">
-                            <asp:Label class="form__label " runat="server" for="email">Email ID: admin@gmail.com</asp:Label>
-                        </div>
-                        <div class="form__group field text-big">
-                            <asp:Label class="form__label " runat="server" for="email">Username: Admin</asp:Label>
-                        </div>
-                        <div class="form__group field text-big">
-                            <asp:Label class="form__label " runat="server" for="email">Password: *****</asp:Label>
-                        </div>
-                    </div>
-
-                <p>
-                    <asp:Label ID="resp" runat="server" ForeColor="Red"></asp:Label>
-                </p>
-                <p>
-                    &nbsp;
-                </p>
-                <p>
-                    &nbsp;
-                </p>
-            </div>
-            </div> 
+                
         </section>
     </form>
     <footer class="background">

@@ -1,6 +1,4 @@
-﻿<asp:SqlDataSource runat="server"></asp:SqlDataSource>
-
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="2_Signin.aspx.cs" Inherits="website.WebForm2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="2_Signin.aspx.cs" Inherits="website.WebForm2" %>
 
 <!DOCTYPE html>
 
@@ -24,20 +22,20 @@
     <form id="form1" runat="server">
         <section class="joinclass firstsection">
             <div>
-                <nav class="navbar background">
-                    <ul class="nav-list ">
-                        <li class="text-mid"><a href="/8_home.aspx">Aniplay</a></li>
-                    </ul>
-                </nav>
+                <asp:Menu CssClass=" text-mid nav-list" ID="Menu1" runat="server" Orientation="Horizontal" >
+                    <Items>
+                        <asp:MenuItem Text="Aniplay" NavigateUrl="~/8_home.aspx" />
+                    </Items>
+                </asp:Menu>
             </div>
             <div class="box-main" style="padding-top:10em"> 
                 <div class="card" style="align-content:center"> 
                     <div class="">
-                        <asp:Label style="color:#0f0c0c" Class=" text-big" ID="Label1" runat="server" Text="Sign in"></asp:Label>
+                        <asp:Label style="color:#8119ff" Class=" text-big" ID="Label1" runat="server" Text="LOG IN"></asp:Label>
                         <div class="text-field">
                             <div class="form__group field text-big">
                                 <asp:TextBox class="form__field " ID="uname" runat="server" PlaceHolder="Username" ></asp:TextBox>
-                                <asp:Label class="form__label " runat="server" for="uname">Username</asp:Label>
+                                <asp:Label class="form__label " ID="test" runat="server" for="uname">Username</asp:Label>
                                 <i></i>
                             </div>
 

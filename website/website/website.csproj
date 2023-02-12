@@ -77,6 +77,8 @@
     </Content>
     <Content Include="Image\trial2.jpg" />
     <Content Include="Image\trial.png" />
+    <Content Include="trial.aspx" />
+    <Content Include="DatabaseData.aspx" />
     <Content Include="website.css" />
     <Content Include="aniplay.css" />
     <Content Include="9_watchlist.aspx" />
@@ -165,6 +167,20 @@
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="trial.aspx.cs">
+      <DependentUpon>trial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="trial.aspx.designer.cs">
+      <DependentUpon>trial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseData.aspx.cs">
+      <DependentUpon>DatabaseData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatabaseData.aspx.designer.cs">
+      <DependentUpon>DatabaseData.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

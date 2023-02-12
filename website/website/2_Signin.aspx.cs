@@ -17,39 +17,35 @@ namespace website
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string x = "admin";
-            string y = "admin";
-            if (uname.Text == x && pass.Text== y)
+            var name = uname.Text;
+            var pas = pass.Text;
+            var read = "";
+
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""E:\Microsoft Visual Studio\Repos\Aniplay\website\website\App_Data\Database1.mdf"";Integrated Security=True");
+            var x = "select top 1 * from [Table] where username = '" + name + "' and password = '" + pas + "'";
+            SqlCommand obj = new SqlCommand(x, con);
+            con.Open(); 
+            int i = obj.ExecuteNonQuery();
+            SqlDataReader y = obj.ExecuteReader();
+            if (y.Read())
             {
+                var tes = y["username"].ToString();
+                read = tes;
+
+            }
+            y.Close();
+            con.Close();
+            if (read != "")
+            {
+                Session["u_name"] = uname.Text;
                 Response.Redirect("/5_Loginconf.aspx");
-            }
-            else if (uname.Text != x && pass.Text != y)
-            {
-                resp.Text = string.Empty;
-                resp.Text = "Invalid Username and Password";
-            }
-            else if (uname.Text == x && pass.Text != y)
-            {
-                resp.Text = string.Empty;
-                resp.Text = "Invalid Password";
-            }
-            else if (uname.Text != x && pass.Text == y)
-            {
-                resp.Text = string.Empty;
-                resp.Text = "Invalid Username";
+                read = "";
             }
             else
             {
                 resp.Text = string.Empty;
-                resp.Text = "Enter valid Username and Password";
+                resp.Text = "Invalid Username and Password";
             }
-
-            /*SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""E:\Microsoft Visual Studio\Repos\Aniplay\website\website\App_Data\Database1.mdf"";Integrated Security=True");
-            String x = "insert into [Table] (Username,Password) values ('" + uname.Text + "','" + pass.Text + "')";
-            SqlCommand obj = new SqlCommand(x, con);
-            con.Open();
-            int i = obj.ExecuteNonQuery();
-            con.Close();*/
         }
 
         protected void Button2_Click(object sender, EventArgs e)

@@ -19,14 +19,14 @@
     <form id="form1" runat="server">
         <section class="firstsection">
         <div>
-            <nav class="navbar background">
-                <ul class="nav-list">
-                    <li class="text-mid"><a href="/8_home.aspx">Home</a></li>
-                    <li class="text-mid"><a href="/7_browse.aspx">Browse</a></li>
-                    <li class="text-mid"><a href="/9_watchlist.aspx">Watchlist</a></li>
-                    <li class="text-mid"><a href="/6_account.aspx">Account</a></li>
-                </ul>
-            </nav>
+            <asp:Menu CssClass=" text-mid nav-list" ID="Menu1" runat="server" Orientation="Horizontal" >
+                    <Items>
+                        <asp:MenuItem Text="Home" NavigateUrl="~/8_home.aspx" />
+                        <asp:MenuItem Text="Browse" NavigateUrl="~/7_browse.aspx" />
+                        <asp:MenuItem Text="Watchlist" NavigateUrl="~/9_watchlist.aspx" />
+                        <asp:MenuItem Text="Account" NavigateUrl="~/6_account.aspx" />
+                    </Items>
+                </asp:Menu>
         </div>   
         <div class="align-txt">
             <p>

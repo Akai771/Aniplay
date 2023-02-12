@@ -16,51 +16,73 @@
         rel="stylesheet" />
 </head>
 <body>
-
+    <div class="loader">
+        <div class="circle"></div>
+    </div>
     <form id="form1" runat="server">
         <section class="joinclass firstsection">
-            <div class="box-main" style="padding-top:10em">
-                <div class="card2" style="align-content:center">
-
-                <asp:Label style="color:white" Class="text-big" ID="Label1" runat="server" Text="Sign up"></asp:Label>
-                    <div class="text-field2">
-                        
-                        <div class="form__group field text-big">
-                            <asp:TextBox class="form__field " ID="email" runat="server" PlaceHolder="Email ID" TextMode="Email"></asp:TextBox>
-                            <asp:Label class="form__label " runat="server" for="email">Email ID</asp:Label>
-                            <i></i>
+            <div>
+                <asp:Menu CssClass=" text-mid nav-list" ID="Menu1" runat="server" Orientation="Horizontal" >
+                    <Items>
+                        <asp:MenuItem Text="Aniplay" NavigateUrl="~/8_home.aspx" />
+                    </Items>
+                </asp:Menu>
+            </div>
+            <div class="box-main" style="padding-top:10em"> 
+                <div class="card2" style="align-content:center"> 
+                    <div class="">
+                        <asp:Label style="color:#8119ff" Class=" text-big" ID="Label1" runat="server" Text="SIGN UP"></asp:Label>
+                        <div class="text-field">
+                            <div class="form__group field text-big">
+                                <asp:TextBox class="form__field " ID="uname" runat="server" PlaceHolder="Username" ></asp:TextBox>
+                                <asp:Label class="form__label " runat="server" for="uname">Username</asp:Label>
+                                <i></i>
+                            </div>
+                            
+                            <div class="form__group field text-big">
+                                <asp:TextBox class="form__field " ID="email" runat="server" PlaceHolder="Email" TextMode="Email"></asp:TextBox>
+                                <asp:Label class="form__label " runat="server" for="email">Email</asp:Label>
+                                <i></i>
+                            </div>
+                            
+                            <div class="form__group field text-big">
+                                <asp:TextBox class="form__field " ID="pass" runat="server" PlaceHolder="Password" TextMode="Password"></asp:TextBox>
+                                <asp:Label class="form__label " runat="server" for="pass">Password</asp:Label>
+                                <i></i>
+                            </div>
+                            
+                            <div class="form__group field text-big">
+                                <asp:TextBox class="form__field " ID="conf_pass" runat="server" PlaceHolder="Confirm Password" TextMode="Password"></asp:TextBox>
+                                <asp:Label class="form__label " runat="server" for="conf_pass">Confirm Password</asp:Label>
+                                <i></i>
+                            </div>
+                            
+                            
                         </div>
-                        <div class="form__group field text-big">
-                            <asp:TextBox class="form__field " ID="TextBox1" runat="server" PlaceHolder="Username"></asp:TextBox>
-                            <asp:Label class="form__label " runat="server" for="uname">Username</asp:Label>
-                            <i></i>
-                        </div>
-                        
-                        <div class="form__group field text-big">
-                            <asp:TextBox class="form__field " ID="pass" runat="server" PlaceHolder="Password" TextMode="Password"></asp:TextBox>
-                            <asp:Label class="form__label " runat="server" for="pass">Password</asp:Label>
-                            <i></i>
-                        </div>
-                        
-                        <div class="form__group field text-big">
-                            <asp:TextBox class="form__field " ID="confPass" runat="server" PlaceHolder="Confirm Password" TextMode="Password"></asp:TextBox>
-                            <asp:Label class="form__label " runat="server" for="confPass">Confirm Password</asp:Label>
-                            <i></i>
-                        </div>
+                        <p>
+                        <asp:Label ID="resp" runat="server" ForeColor="Red"></asp:Label>
+                        </p>
+                        <p>
+                            &nbsp;
+                        </p>
+                        <p>
+                            &nbsp;
+                        </p>
+                        <p>
+                            <asp:Button Class="but_ani" ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" />
+                        </p>
+                        <p>
+                            &nbsp;</p>
+                        <p>
+                            &nbsp;</p>
+                        <p>
+                            &nbsp;</p>
                     </div>
-
-                <p>
-                    <asp:Label ID="resp" runat="server" ForeColor="Red"></asp:Label>
+                <p class="text-small">
+                    <asp:Label ID="Label2" runat="server" ForeColor="#ffffff" Text="Already have an account?"></asp:Label>
+                    <asp:HyperLink class="hyper-link" ID="HyperLink1" runat="server" NavigateUrl="/2_Signin.aspx">Sign in</asp:HyperLink>
                 </p>
-                <p>
-                    &nbsp;
-                </p>
-                <p>
-                    &nbsp;
-                </p>
-                <p>
-                    <asp:Button Class="button" ID="Button1" runat="server" OnClick="Button1_Click" Text="Sign up" />
-                </p>
+                     
             </div>
             </div> 
         </section>

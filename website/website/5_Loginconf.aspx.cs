@@ -11,7 +11,7 @@ namespace website
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string username = "Admin";
+            string username = Session["u_name"].ToString();
             Greet.Text = "Welcome " + username + "!";
 
         }

@@ -28,17 +28,35 @@
                     </Items>
                 </asp:Menu>
         </div>   
-        <div class="align-txt">
+        <div style="text-align:center" >
             <p>
                 <asp:Label class="text-big" style="color:white" ID ="label1" runat="server" Text="Home" />
             </p>      
         </div>
-        <div class="anime-marg">
-            <div class="card-ani">
-                <div>
+            <div class="con_card-container text-mid2">
+                <div class="con_card">
+                    <img src="~/Image/aotFinal.jpg" alt="Image 1" />
+                    <div class="con_card-text">
+                        <h2>Attack on Titan</h2>
+                        <p class="text-small">Description 1</p>
+                    </div>
                 </div>
+                <div class="con_card">
+                    <img src="~/Image/demonSlayer.jpg" alt="Image 2" style="width:80%" />
+                    <div class="con_card-text">
+                        <h2>Demon Slayer</h2>
+                        <p class="text-small">Description 2</p>
+                    </div>
+                </div>
+                <div class="con_card">
+                    <img src="~/Image/blueLock.jpeg" alt="Image 3" />
+                    <div class="con_card-text">
+                        <h2>Black Clover</h2>
+                        <p class="text-small">Description 2</p>
+                    </div>
+                </div>
+
             </div>
-        </div>
         </section>
     </form>
     <footer class="background">

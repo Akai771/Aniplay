@@ -76,6 +76,12 @@ p::selection {
     font-size: 20px;
 }
 
+.text-mid2 {
+    font-family: 'Readex Pro', serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
 .firstsection {
     background-color: rgb(129, 25, 255);
     background-repeat: no-repeat;
@@ -521,48 +527,34 @@ transition: box-shadow 0.2s ease-in;
 }
 
 
-.card-ani {
-    width: 190px;
-    height: 254px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
-    background: #fff;
+.con_card-container {
     display: flex;
-    border-radius: 20px;
+    flex-wrap: wrap;
     justify-content: center;
-    position: relative;
-    transition: all .4s;
 }
 
-    .card-ani::before {
-        content: 'Demon Slayer';
-        letter-spacing: 0.2em;
-        position: absolute;
-        bottom: 8px;
-        left: 20px;
-        color: rgb(51, 51, 51);
-        font-size: 0.8em;
-        font-weight: 700;
-    }
+.con_card {
+    background-color: #F5F5FA;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
-    .card-ani div {
+    .con_card img {
         width: 100%;
-        height: 100%;
-        border-radius: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
-        cursor: pointer;
-        z-index: 10;
-        transition: all .4s;
-        background-color: #fff;
+        height: 325px;
+        object-fit: cover;
     }
 
-    .card-ani:hover div {
-        transform: translateY(-30px);
-    }
-
-    .anime-marg{
-        align-content:center;
-        justify-items:center;
-        margin-left: 10em;
-        margin-right: 10em;
-    }
+.con_card-text {
+    padding: 20px;
+}
 

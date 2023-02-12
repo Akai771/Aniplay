@@ -33,13 +33,31 @@ namespace website
         protected global::System.Web.UI.WebControls.Menu Menu1;
 
         /// <summary>
-        /// label1 control.
+        /// uname_val control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label label1;
+        protected global::System.Web.UI.WebControls.Label uname_val;
+
+        /// <summary>
+        /// email_val control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label email_val;
+
+        /// <summary>
+        /// pass_val control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label pass_val;
 
         /// <summary>
         /// button1 control.

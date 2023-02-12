@@ -16,27 +16,56 @@
         rel="stylesheet" />
 </head>
 <body>
+    <div class="loader">
+        <div class="circle"></div>
+    </div>
     <form id="form1" runat="server">
-        <section class="firstsection">
-        <div>
-            <asp:Menu CssClass=" text-mid nav-list" ID="Menu1" runat="server" Orientation="Horizontal" >
+        <section class="joinclass firstsection">
+            <div>
+                <asp:Menu CssClass=" text-mid nav-list" ID="Menu1" runat="server" Orientation="Horizontal" >
                     <Items>
-                        <asp:MenuItem Text="Home" NavigateUrl="~/8_home.aspx" />
-                        <asp:MenuItem Text="Browse" NavigateUrl="~/7_browse.aspx" />
-                        <asp:MenuItem Text="Watchlist" NavigateUrl="~/9_watchlist.aspx" />
-                        <asp:MenuItem Text="Account" NavigateUrl="~/6_account.aspx" />
+                        <asp:MenuItem Text="Aniplay" NavigateUrl="~/1_AniPlay.aspx" />
                     </Items>
                 </asp:Menu>
-        </div>
-        <div class="align-txt">
-            <p>
-                <asp:Label class="text-big" style="color:white" ID ="label1" runat="server" Text="Account" />
-            </p>
-            <p style="padding-top:2em">
-                <asp:Button ID="button1" runat="server" Class="button2" Text="Log out" PostBackUrl="~/1_AniPlay.aspx" />
-            </p>
-                   
-        </div>
+            </div>
+            <div class="box-main" style="padding-top:10em"> 
+                <div class="info_card" style="align-content:center"> 
+                    <div class="">
+                        <asp:Label style="color:#8119ff" Class=" text-big" runat="server" Text="Account Info"></asp:Label>
+                        <div class="text-field">
+                            <div class="form__group field text-big">
+                                <asp:Label class="form__label " runat="server" for="uname">Username:</asp:Label>
+                                <asp:Label style="padding-left:6em" class="form__label " ID="uname_val" runat="server" for="uname">*Test*</asp:Label>
+                                <i></i>
+                            </div>
+
+                            <div class="form__group field text-big">
+                                <asp:Label class="form__label " runat="server" for="pass">Email:</asp:Label>
+                                <asp:Label style="padding-left:6em" class="form__label " ID="email_val" runat="server" for="uname">*Test*</asp:Label>
+                                <i></i>
+                            </div>
+                            
+                            <div class="form__group field text-big">
+                                <asp:Label class="form__label " runat="server" for="pass">Password:</asp:Label>
+                                <asp:Label style="padding-left:6em" class="form__label " ID="pass_val" runat="server" for="uname">*Test*</asp:Label>
+                                <i></i>
+                            </div>
+                        </div>
+                        <p>
+                            &nbsp;
+                        </p>
+                        <p>
+                            <asp:Button ID="button1" runat="server" Class="button2" Text="Log out" PostBackUrl="~/1_AniPlay.aspx" OnClick="button1_Click" />
+                        </p>
+                        <p>
+                            &nbsp;</p>
+                        <p>
+                            &nbsp;</p>
+                        <p>
+                            &nbsp;</p>
+                    </div>
+            </div>
+            </div> 
         </section>
     </form>
     <footer class="background">
@@ -46,3 +75,5 @@
     </footer>
 </body>
 </html>
+            
+                   

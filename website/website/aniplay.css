@@ -272,7 +272,7 @@ p::selection {
     font-weight: 600;
     letter-spacing: 2px;
     background: transparent;
-    color: #fff;
+    color: #fc2323;
     overflow: hidden;
     box-shadow: 0 0 0 0 transparent;
     -webkit-transition: all 0.2s ease-in;
@@ -282,6 +282,7 @@ p::selection {
 
     .button2:hover {
         background: #fc2323;
+        color: #fff;
         box-shadow: 0 0 30px 5px #fc2323;
         -webkit-transition: all 0.2s ease-out;
         -moz-transition: all 0.2s ease-out;
@@ -498,8 +499,17 @@ transition: box-shadow 0.2s ease-in;
     width: 400px;
     height: 455px;
     border-radius: 30px;
-    background: #F5F5Fa;
-    
+    background: #F5F5Fa;  
+}
+
+.info_card {
+    padding-top: 2em;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 230px;
+    border-radius: 30px;
+    background: #F5F5FA;
 }
 
 .align-ev {

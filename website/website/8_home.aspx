@@ -24,7 +24,7 @@
                         <asp:MenuItem Text="Home" NavigateUrl="~/8_home.aspx" />
                         <asp:MenuItem Text="Browse" NavigateUrl="~/7_browse.aspx" />
                         <asp:MenuItem Text="Watchlist" NavigateUrl="~/9_watchlist.aspx" />
-                        <asp:MenuItem Text="Account" NavigateUrl="~/6_account.aspx" />
+                        <asp:MenuItem Text="Account" NavigateUrl="~/11_accountMaster.aspx" />
                     </Items>
                 </asp:Menu>
         </div>   
@@ -35,24 +35,41 @@
         </div>
             <div class="con_card-container text-mid2">
                 <div class="con_card">
-                    <img src="~/Image/aotFinal.jpg" alt="Image 1" />
+                    <img  src="Image/aotFinal.jpg" alt="Image 1" />
                     <div class="con_card-text">
                         <h2>Attack on Titan</h2>
-                        <p class="text-small">Description 1</p>
                     </div>
                 </div>
                 <div class="con_card">
-                    <img src="~/Image/demonSlayer.jpg" alt="Image 2" style="width:80%" />
+                    <img src="Image/demonSlayer.jpg" alt="Image 2" />
                     <div class="con_card-text">
                         <h2>Demon Slayer</h2>
-                        <p class="text-small">Description 2</p>
                     </div>
                 </div>
                 <div class="con_card">
-                    <img src="~/Image/blueLock.jpeg" alt="Image 3" />
+                    <img src="Image/blueLock.jpeg" alt="Image 3" />
                     <div class="con_card-text">
-                        <h2>Black Clover</h2>
-                        <p class="text-small">Description 2</p>
+                        <h2>Blue Lock</h2>
+                    </div>
+                </div>
+                <br />
+                <div class="con_card-container text-mid2">
+                <div class="con_card">
+                    <img  src="Image/bleach.jpeg" alt="Image 1" />
+                    <div class="con_card-text">
+                        <h2>Bleach</h2>
+                    </div>
+                </div>
+                <div class="con_card">
+                    <img src="Image/mha.jpeg" alt="Image 2" />
+                    <div class="con_card-text">
+                        <h2>My Hero Academia</h2>
+                    </div>
+                </div>
+                <div class="con_card">
+                    <img src="Image/tokyorev.jpg" alt="Image 3" />
+                    <div class="con_card-text">
+                        <h2>Tokyo Revengers</h2>
                     </div>
                 </div>
 

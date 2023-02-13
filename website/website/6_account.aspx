@@ -24,7 +24,7 @@
                         <asp:MenuItem Text="Home" NavigateUrl="~/8_home.aspx" />
                         <asp:MenuItem Text="Browse" NavigateUrl="~/7_browse.aspx" />
                         <asp:MenuItem Text="Watchlist" NavigateUrl="~/9_watchlist.aspx" />
-                        <asp:MenuItem Text="Account" NavigateUrl="~/6_account.aspx" />
+                        <asp:MenuItem Text="Account" NavigateUrl="~/11_accountMaster.aspx" />
                     </Items>
                 </asp:Menu>
         </div>

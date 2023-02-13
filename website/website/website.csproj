@@ -75,9 +75,15 @@
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="Image\aotFinal.jpg" />
+    <Content Include="Image\bleach.jpeg" />
+    <Content Include="Image\blueLock.jpeg" />
+    <Content Include="Image\demonSlayer.jpg" />
+    <Content Include="Image\mha.jpeg" />
+    <Content Include="Image\tokyorev.jpg" />
     <Content Include="Image\trial2.jpg" />
     <Content Include="Image\trial.png" />
-    <Content Include="trial.aspx" />
+    <Content Include="11_accountMaster.aspx" />
     <Content Include="DatabaseData.aspx" />
     <Content Include="website.css" />
     <Content Include="aniplay.css" />
@@ -168,12 +174,12 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
-    <Compile Include="trial.aspx.cs">
-      <DependentUpon>trial.aspx</DependentUpon>
+    <Compile Include="11_accountMaster.aspx.cs">
+      <DependentUpon>11_accountMaster.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="trial.aspx.designer.cs">
-      <DependentUpon>trial.aspx</DependentUpon>
+    <Compile Include="11_accountMaster.aspx.designer.cs">
+      <DependentUpon>11_accountMaster.aspx</DependentUpon>
     </Compile>
     <Compile Include="DatabaseData.aspx.cs">
       <DependentUpon>DatabaseData.aspx</DependentUpon>

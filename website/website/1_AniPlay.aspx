@@ -21,19 +21,18 @@
             <div>
                 <asp:Menu CssClass=" text-mid nav-list" ID="Menu1" runat="server" Orientation="Horizontal" >
                     <Items>
-                        <asp:MenuItem Text="Home" NavigateUrl="~/8_home.aspx" />
-                        <asp:MenuItem Text="Browse" NavigateUrl="~/2_Signin.aspx" />
-                        <asp:MenuItem Text="Watchlist" NavigateUrl="~/2_Signin.aspx" />
-                        <asp:MenuItem Text="Account" NavigateUrl="~/2_Signin.aspx" />
+                        <asp:MenuItem Text="Aniplay" NavigateUrl="~/1_AniPlay.aspx" />
                     </Items>
                 </asp:Menu>
             </div>
 
             <div class="align-txt">
                 <p>
-                    <asp:Label class="text-big" Style="color: white" ID="Label1" runat="server" Text="Welcome to AniPlay!" />
+                    <asp:Label class="text-big" Style="color: white" ID="Label1" runat="server" Text="Welcome to " />
+                    <asp:Label class="anitxt text-big" Style="color: #42ff55" ID="Label3" runat="server" Text="Aniplay" />
+                    <asp:Label class="text-big" Style="color: white" ID="Label4" runat="server" Text="!" />
                     <br />
-                    <asp:Label class="text-small" Style="color: whitesmoke" ID="Label2" runat="server" Text="The best place to watch anime." />
+                    <asp:Label class="text-small" Style="color: #e0e0e0" ID="Label2" runat="server" Text="Bringing the World of Anime to Your Screen, Anytime, Anywhere." />
                 </p>
                 <p style="padding-top: 2em">
                     <asp:Button class="button" ID="Button1" runat="server" Text="Sign up" PostBackUrl="/3_Signup.aspx" />

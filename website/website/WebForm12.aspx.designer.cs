@@ -11,7 +11,7 @@ namespace website
 {
 
 
-    public partial class WebForm7
+    public partial class WebForm12
     {
 
         /// <summary>
@@ -33,21 +33,21 @@ namespace website
         protected global::System.Web.UI.WebControls.Menu Menu1;
 
         /// <summary>
-        /// label1 control.
+        /// Greet control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label label1;
+        protected global::System.Web.UI.WebControls.Label Greet;
 
         /// <summary>
-        /// Menu2 control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Menu Menu2;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

@@ -1,10 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="10_account.aspx.cs" Inherits="website.WebForm10" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="11_accountMaster.aspx.cs" Inherits="website.WebForm11" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Home</title>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <title>Sign in</title>
     <link rel="stylesheet" href="/aniplay.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,17 +11,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;700&family=Roboto+Condensed:ital@1&display=swap"
         rel="stylesheet" />
-</head>
-<body>
-    <div class="loader">
-        <div class="circle"></div>
-    </div>
-    <form id="form1" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <section class="joinclass firstsection">
             <div>
                 <asp:Menu CssClass=" text-mid nav-list" ID="Menu1" runat="server" Orientation="Horizontal" >
                     <Items>
-                        <asp:MenuItem Text="Aniplay" NavigateUrl="~/1_AniPlay.aspx" />
+                        <asp:MenuItem Text="Home" NavigateUrl="~/8_home.aspx" />
+                        <asp:MenuItem Text="Browse" NavigateUrl="~/7_browse.aspx" />
+                        <asp:MenuItem Text="Watchlist" NavigateUrl="~/9_watchlist.aspx" />
+                        <asp:MenuItem Text="Account" NavigateUrl="~/11_accountMaster.aspx" />
                     </Items>
                 </asp:Menu>
             </div>
@@ -67,13 +63,4 @@
             </div>
             </div> 
         </section>
-    </form>
-    <footer class="background">
-        <p class="text-footer">
-            Copyright ©-All rights are reserved<br />
-        </p>
-    </footer>
-</body>
-</html>
-            
-                   
+</asp:Content>

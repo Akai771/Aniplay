@@ -21,12 +21,9 @@
         <div>
             <asp:Menu CssClass=" text-mid nav-list" ID="Menu1" runat="server" Orientation="Horizontal" >
                     <Items>
-                        <asp:MenuItem Text="Home" NavigateUrl="~/8_home.aspx" />
-                        <asp:MenuItem Text="Browse" NavigateUrl="~/2_Signin.aspx" />
-                        <asp:MenuItem Text="Watchlist" NavigateUrl="~/2_Signin.aspx" />
-                        <asp:MenuItem Text="Account" NavigateUrl="~/2_Signin.aspx" />
+                        <asp:MenuItem Text="Aniplay" NavigateUrl="~/2_Signin.aspx" />
                     </Items>
-                </asp:Menu>
+                </asp:Menu>>
         </div>
         <div class="align-txt">
             <p>

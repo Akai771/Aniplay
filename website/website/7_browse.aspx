@@ -24,13 +24,42 @@
                         <asp:MenuItem Text="Home" NavigateUrl="~/8_home.aspx" />
                         <asp:MenuItem Text="Browse" NavigateUrl="~/7_browse.aspx" />
                         <asp:MenuItem Text="Watchlist" NavigateUrl="~/9_watchlist.aspx" />
-                        <asp:MenuItem Text="Account" NavigateUrl="~/6_account.aspx" />
+                        <asp:MenuItem Text="Account" NavigateUrl="~/11_accountMaster.aspx" />
                     </Items>
                 </asp:Menu>
         </div>
         <div class="align-txt">
             <p>
                 <asp:Label class="text-big" style="color:white" ID ="label1" runat="server" Text="Browse" />
+                <asp:Menu style="padding-left:12em" CssClass=" text-mid nav-list" ID="Menu2" runat="server" Orientation="horizontal" >
+                    <Items>
+                        <asp:MenuItem Text="Action" />
+                        <asp:MenuItem Text="Adventure"/>
+                        <asp:MenuItem Text="Comedy" />
+                        <asp:MenuItem Text="Drama" />
+                        <asp:MenuItem Text="Educational" />
+                        <asp:MenuItem Text="Fantasy" />
+                        <asp:MenuItem Text="Gourmet" />
+                        <asp:MenuItem Text="Historical" />
+                        <asp:MenuItem Text="Horror" />
+                        <asp:MenuItem Text="Mecha" />
+                        <asp:MenuItem Text="Mystery" />
+                        <asp:MenuItem Text="Romance" />
+                        <asp:MenuItem Text="Sci-fi" />
+                        <asp:MenuItem Text="Seinen" />
+                        <asp:MenuItem Text="Shounen" />
+                        <asp:MenuItem Text="Slice of life" />
+                        <asp:MenuItem Text="Sports" />
+                        <asp:MenuItem Text="Suspense" />
+                        
+                        
+                        
+                        
+                        
+
+                        
+                    </Items>
+                </asp:Menu>
             </p>
                    
         </div>

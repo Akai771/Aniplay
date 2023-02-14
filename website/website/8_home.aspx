@@ -27,53 +27,55 @@
                         <asp:MenuItem Text="Account" NavigateUrl="~/11_accountMaster.aspx" />
                     </Items>
                 </asp:Menu>
-        </div>   
-        <div style="text-align:center" >
-            <p>
-                <asp:Label class="text-big" style="color:white" ID ="label1" runat="server" Text="Home" />
-            </p>      
-        </div>
-            <div class="con_card-container text-mid2">
-                <div class="con_card">
-                    <img  src="Image/aotFinal.jpg" alt="Image 1" />
-                    <div class="con_card-text">
-                        <h2>Attack on Titan</h2>
-                    </div>
+        </div>  
+                <div style="text-align: center">
+                    <p>
+                        <asp:Label class="text-big" Style="color: white" ID="label1" runat="server" Text="Home" />
+                    </p>
                 </div>
-                <div class="con_card">
-                    <img src="Image/demonSlayer.jpg" alt="Image 2" />
-                    <div class="con_card-text">
-                        <h2>Demon Slayer</h2>
-                    </div>
-                </div>
-                <div class="con_card">
-                    <img src="Image/blueLock.jpeg" alt="Image 3" />
-                    <div class="con_card-text">
-                        <h2>Blue Lock</h2>
-                    </div>
-                </div>
-                <br />
+            <header>
                 <div class="con_card-container text-mid2">
-                <div class="con_card">
-                    <img  src="Image/bleach.jpeg" alt="Image 1" />
-                    <div class="con_card-text">
-                        <h2>Bleach</h2>
+                    <div class="con_card">
+                        <img src="Image/aotFinal.jpg" alt="Image 1" />
+                        <div class="con_card-text">
+                            <h2>Attack on Titan</h2>
+                        </div>
                     </div>
-                </div>
-                <div class="con_card">
-                    <img src="Image/mha.jpeg" alt="Image 2" />
-                    <div class="con_card-text">
-                        <h2>My Hero Academia</h2>
+                    <div class="con_card">
+                        <img src="Image/demonSlayer.jpg" alt="Image 2" />
+                        <div class="con_card-text">
+                            <h2>Demon Slayer</h2>
+                        </div>
                     </div>
-                </div>
-                <div class="con_card">
-                    <img src="Image/tokyorev.jpg" alt="Image 3" />
-                    <div class="con_card-text">
-                        <h2>Tokyo Revengers</h2>
+                    <div class="con_card">
+                        <img src="Image/blueLock.jpeg" alt="Image 3" />
+                        <div class="con_card-text">
+                            <h2>Blue Lock</h2>
+                        </div>
                     </div>
-                </div>
-
-            </div>
+                    <br />
+                    <div class="con_card-container text-mid2">
+                        <div class="con_card">
+                            <img src="Image/bleach.jpeg" alt="Image 1" />
+                            <div class="con_card-text">
+                                <h2>Bleach</h2>
+                            </div>
+                        </div>
+                        <div class="con_card">
+                            <img src="Image/mha.jpeg" alt="Image 2" />
+                            <div class="con_card-text">
+                                <h2>My Hero Academia</h2>
+                            </div>
+                        </div>
+                        <div class="con_card">
+                            <img src="Image/tokyorev.jpg" alt="Image 3" />
+                            <div class="con_card-text">
+                                <h2>Tokyo Revengers</h2>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </header>
         </section>
     </form>
     <footer class="background">

@@ -31,6 +31,8 @@
         <div class="align-txt">
             <p>
                 <asp:Label class="text-big" style="color:white" ID ="label1" runat="server" Text="Watchlist" />
+                <br />
+                <asp:Label class="text-small" Style="color: #e0e0e0" ID="Label2" runat="server" Text="Keep track of anime titles you want to watch." />
             </p>
                    
         </div>

@@ -83,9 +83,11 @@ p::selection {
 }
 
 .firstsection {
-    background-color: rgb(129, 25, 255);
+    /*background-color: rgb(129, 25, 255);*/
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(129,25,255,1) 0%, rgba(61,0,91,1) 100%);
     background-repeat: no-repeat;
-    height: 660px;
+    height: 1000px;
     overflow: hidden;
     flex-direction: column;
 }
@@ -498,7 +500,7 @@ p::selection {
     align-items: center;
     text-align: center;
     width: 400px;
-    height: 320px;
+    height: 370px;
     border-radius: 30px;
     background: #F5F5FA;
 }
@@ -570,4 +572,39 @@ p::selection {
 
 .anitxt:hover {
     color: #fff;
+}
+
+@keyframes slideInTop {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+header {
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInTop;
+}
+
+.init_ani {
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: initAni;
+}
+@keyframes initAni {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }

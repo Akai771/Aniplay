@@ -36,20 +36,18 @@
                             <div class="form__group field text-big">
                                 <asp:TextBox class="form__field " ID="uname" runat="server" PlaceHolder="Username" ></asp:TextBox>
                                 <asp:Label class="form__label " ID="test" runat="server" for="uname">Username</asp:Label>
+                                <asp:RequiredFieldValidator style="color:red" Class="text-small" ID="RequiredFieldValidator1" runat="server" ErrorMessage="Username Required*" ControlToValidate="uname"></asp:RequiredFieldValidator>
                                 <i></i>
                             </div>
-
                             <div class="form__group field text-big">
                                 <asp:TextBox class="form__field " ID="pass" runat="server" PlaceHolder="Password" TextMode="Password"></asp:TextBox>
                                 <asp:Label class="form__label " runat="server" for="pass">Password</asp:Label>
+                                <asp:RequiredFieldValidator style="color:red" Class="text-small" ID="RequiredFieldValidator2" runat="server" ErrorMessage="Enter valid password*" ControlToValidate="pass"></asp:RequiredFieldValidator>
                                 <i></i>
                             </div>
                         </div>
                         <p>
-                        <asp:Label ID="resp" runat="server" ForeColor="Red"></asp:Label>
-                        </p>
-                        <p>
-                            &nbsp;
+                        <asp:Label class="text-small" ID="resp" runat="server" ForeColor="Red"></asp:Label>
                         </p>
                         <p>
                             &nbsp;
@@ -57,8 +55,6 @@
                         <p>
                             <asp:Button Class="button3" ID="Button1" runat="server" OnClick="Button1_Click" Text="Sign in" />
                         </p>
-                        <p>
-                            &nbsp;</p>
                         <p>
                             &nbsp;</p>
                         <p>

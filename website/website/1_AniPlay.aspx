@@ -26,20 +26,22 @@
                 </asp:Menu>
             </div>
 
-            <div class="align-txt">
-                <p>
-                    <asp:Label class="text-big" Style="color: white" ID="Label1" runat="server" Text="Welcome to " />
-                    <asp:Label class="anitxt text-big" Style="color: #42ff55" ID="Label3" runat="server" Text="Aniplay" />
-                    <asp:Label class="text-big" Style="color: white" ID="Label4" runat="server" Text="!" />
-                    <br />
-                    <asp:Label class="text-small" Style="color: #e0e0e0" ID="Label2" runat="server" Text="Bringing the World of Anime to Your Screen, Anytime, Anywhere." />
-                </p>
-                <p style="padding-top: 2em">
-                    <asp:Button class="button" ID="Button1" runat="server" Text="Sign up" PostBackUrl="/3_Signup.aspx" />
-                    <asp:Button class="button" ID="Button2" runat="server" Text="Sign in" PostBackUrl="/2_Signin.aspx" />
-                </p>
+            <header class="init_ani">
+                <div class="align-txt">
+                    <p>
+                        <asp:Label class="text-big" Style="color: white" ID="Label1" runat="server" Text="Welcome to " />
+                        <asp:Label class="anitxt text-big" Style="color: #42ff55" ID="Label3" runat="server" Text="Aniplay" />
+                        <asp:Label class="text-big" Style="color: white" ID="Label4" runat="server" Text="!" />
+                        <br />
+                        <asp:Label class="text-small" Style="color: #e0e0e0" ID="Label2" runat="server" Text="Bringing the World of Anime to Your Screen, Anytime, Anywhere." />
+                    </p>
+                    <p style="padding-top: 2em">
+                        <asp:Button class="button" ID="Button1" runat="server" Text="Sign up" PostBackUrl="/3_Signup.aspx" />
+                        <asp:Button class="button" ID="Button2" runat="server" Text="Sign in" PostBackUrl="/2_Signin.aspx" />
+                    </p>
 
-            </div>
+                </div>
+            </header>
         </section>
     </form>
     <footer class="background">

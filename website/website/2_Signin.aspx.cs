@@ -37,6 +37,7 @@ namespace website
             if (read != "")
             {
                 Session["u_name"] = uname.Text;
+                Session["pass"] = pass.Text;
                 Response.Redirect("/5_Loginconf.aspx");
                 read = "";
             }

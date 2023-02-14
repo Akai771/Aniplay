@@ -34,9 +34,9 @@
                         <asp:Label style="color:#8119ff" Class=" text-big" ID="Label1" runat="server" Text="SIGN UP"></asp:Label>
                         <div class="text-field">
                             <div class="form__group field ">
-                                <asp:TextBox class="form__field text-big" ID="uname" runat="server" PlaceHolder="Username" ></asp:TextBox>
+                                <asp:TextBox class="form__field text-big" ID="username" runat="server" PlaceHolder="Username" ></asp:TextBox>
                                 <asp:Label class="form__label text-big" runat="server" for="uname" >Username </asp:Label> 
-                                <asp:RequiredFieldValidator style="color:red" Class="text-small" ID="RequiredFieldValidator1" runat="server" ErrorMessage="Username Required*" ControlToValidate="uname"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator style="color:red" Class="text-small" ID="RequiredFieldValidator1" runat="server" ErrorMessage="Username Required*" ControlToValidate="username"></asp:RequiredFieldValidator>
                                 <i></i>
                             </div>
                             
@@ -48,9 +48,9 @@
                             </div>
                             
                             <div class="form__group field">
-                                <asp:TextBox class="form__field text-big" ID="pass" runat="server" PlaceHolder="Password" TextMode="Password"></asp:TextBox>
+                                <asp:TextBox class="form__field text-big" ID="password" runat="server" PlaceHolder="Password" TextMode="Password"></asp:TextBox>
                                 <asp:Label class="form__label text-big" runat="server" for="pass">Password</asp:Label>
-                                <asp:RequiredFieldValidator style="color:red" Class="text-small" ID="RequiredFieldValidator2" runat="server" ErrorMessage="Enter valid password*" ControlToValidate="pass"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator style="color:red" Class="text-small" ID="RequiredFieldValidator2" runat="server" ErrorMessage="Enter valid password*" ControlToValidate="password"></asp:RequiredFieldValidator>
 
                                 
                                 <i></i>
@@ -60,7 +60,7 @@
                                 <asp:TextBox class="form__field text-big" ID="conf_pass" runat="server" PlaceHolder="Confirm Password" TextMode="Password"></asp:TextBox>
                                 <asp:Label class="form__label text-big" runat="server" for="conf_pass">Confirm Password</asp:Label>
                                 <i></i>
-                                <asp:CompareValidator style="color:red" Class="text-small" ID="CompareValidator1" runat="server" ErrorMessage="Password does not match*" ControlToValidate="conf_pass" ControlToCompare="pass"></asp:CompareValidator>
+                                <asp:CompareValidator style="color:red" Class="text-small" ID="CompareValidator1" runat="server" ErrorMessage="Password does not match*" ControlToValidate="conf_pass" ControlToCompare="password"></asp:CompareValidator>
                             </div>
                             
                             

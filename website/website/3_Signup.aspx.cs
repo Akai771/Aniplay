@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
+using System.Web.Configuration;
 
 namespace website
 {
@@ -18,12 +19,12 @@ namespace website
         protected void Button1_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""E:\Microsoft Visual Studio\Repos\Aniplay\website\website\App_Data\Database1.mdf"";Integrated Security=True");
-            String x = "insert into [Table] (username,email,password) values ('" + uname.Text + "','" + email.Text + "','" + pass.Text + "')";
+            var x = "insert into [Table] (username,email,password) values ('" + username.Text + "','" + email.Text + "','" + password.Text + "')";
             SqlCommand obj = new SqlCommand(x, con);
             con.Open();
             int i = obj.ExecuteNonQuery();
             con.Close();
-            
+            Response.Redirect("4_SignupConf.aspx");
         }
     }
 }
